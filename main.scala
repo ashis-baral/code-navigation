@@ -1,10 +1,12 @@
-object Main {
+class Calculator {
   def add(a: Int, b: Int): Int = {
     a + b
   }
+}
 
+object Main {
   def main(args: Array[String]): Unit = {
-    val result = add(2, 3)
-    println(result)
+    val c = new Calculator()
+    println(c.add(2, 3))
   }
 }
